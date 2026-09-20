@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>工程</title>
+    <meta charset="UTF-8">
+    <style>
+        .tip {
+            position: relative;
+            color: #c00;
+            cursor: help;
+        }
+
+        .tip-box {
+            background: #000;
+            border-radius: 4px;
+            bottom: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+            color: #fff;
+            font-size: 13px;
+            left: 50%;
+            line-height: 1.4;
+            margin-bottom: 8px;
+            opacity: 0;
+            padding: 6px 10px;
+            position: absolute;
+            transform: translateX(-50%);
+            transition: opacity .2s ease;
+            visibility: hidden;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .tip-box::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+        }
+
+        .tip:hover .tip-box {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./工程">事故</a>
+    <div>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>本交底适用于2m×1.5m<span class="tip">抗滑桩<span
+                    class="tip-box">如预加固桩、桩板墙444444444444444444444444444444444444444444444</span></span>技术交底。</p>
+
+    </div>
+
+</body>
+
+</html>
